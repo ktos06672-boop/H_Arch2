@@ -1,0 +1,143 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: black;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: #ffffff;
+    background: rgb(122, 140, 157)
+}
+.menu {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 3rem;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+}
+.menu a {
+    margin: 0 2rem 0 .2rem;
+    text-decoration: none;
+    padding: 1rem 1rem 1rem 0px;
+}
+.drop {
+    position: relative;
+}
+.dropdown ul {
+    width: 200px;
+    text-align: center;
+    position: absolute;
+    background-color: #9e9e9e;
+    padding: 0;
+    list-style-type: none;
+    box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.70);
+    margin-top: 10px;
+    border-radius: 7px;
+    display: none;
+}
+.dropdown ul li {
+    padding: .5rem;
+}
+.dropdown ul li a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+.dropdown ul li:hover {
+    background: #272B3F;
+    border-radius: 7px;
+}
+.dropdown a:focus + ul,
+.dropdown a:hover + ul,
+.dropdown ul:hover {
+    display: block;
+}
+.menu a:hover {
+    text-decoration: underline;
+}
+.dropdown ul li a:hover {
+    text-decoration: none;
+}
+.menuimg {
+    width: 60px;
+    height: 60px;
+    justify-content: flex-start;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+    display: flexbox;
+}
+.arch {
+    background-color: white; 
+    padding: 30px 40px; 
+    
+    margin-top: 100px; 
+    
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25); 
+    border-radius: 12px; 
+    
+    max-width: 1200px;
+    height: auto;
+    margin-left: 3%;
+    margin-right: auto; 
+}
+.arch section h1 {
+    color: black;
+    font-family: 'Trebuchet MS';
+    font-size: 5vw;
+}
+.arch section p {
+    width: 100%;
+    height: auto;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+}
+.studio {
+    width: 100%;
+    height: auto;
+    float: left;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+}
+.about-content {
+    display: flex;
+    gap: 2rem;
+}
+.wirt4 {
+    background: url("image/wirt4.jpg");
+    width: auto;
+    height: 850px;
+    top: 0;
+}
+.imagee {
+    background: url("image/wirt4.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 600px; /* Możesz zmienić wysokość */
+    
+    display: flex;
+    justify-content: center; /* środek poziomo */
+    align-items: center;     /* środek pionowo */
+    text-align: center;
+}
+
+.imagee h1 {
+    font-size: 100px; /* dowolna wielkość */
+    color: white;
+    text-shadow: 2px 2px 16px rgb(0, 0, 0); /* lepsza czytelność */
+    font-family: 'Lucida Sans Unicode';
+}
